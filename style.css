@@ -1,0 +1,398 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    font-family:"Karma" ,sans-serif;
+    overflow-x: hidden; 
+}
+
+
+.side-nav{
+    width: 40vw;
+    height: 100%;
+    background-color: white;
+    box-shadow:0 5px 5px 0 rgba(0,0,0,0.3);
+    position: fixed;
+    margin: -125px 0 0 0;
+    z-index: 9 ;
+    display: flex;
+    flex-direction: column;
+}
+
+.hide {
+    visibility: hidden; 
+    animation: list 1s linear 0s 1;
+}
+
+@keyframes list {
+    from {
+    left: -200px;
+    opacity: 0;
+    }
+    to{
+        left: 0;
+    opacity: 1;
+    }
+}
+
+.nav-tabs {
+    height: 70px;
+    text-decoration: none;
+    color: black;
+    padding: 22px;
+    font-size: 1.5rem;
+}
+
+.main-wrapper{
+    width:100vw;
+}
+
+.fix-horizontal {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0 4.3rem 0.6rem;
+    font-size: 1.5rem;
+    padding-bottom: 4px  ;
+}
+
+.fix{
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    top: 0%;
+}
+
+.nav{
+    padding: 14px ;
+    cursor: pointer;
+}
+
+.nav:hover{
+    background-color:  rgba(216, 213, 213, 0.9);
+}
+
+.myfood {
+    padding:16px 4px 4px 3px;
+    margin-left: 24px;
+}
+
+.mail{
+    padding:16px 2rem 0 4px ;
+}
+
+.content{
+    margin: 7.7rem 0px 0 20px;
+}
+
+.blogposts-row1, .blogposts-row2 {
+    width: 95%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.blogpost {
+    width: 25%;
+    height:95%;
+    padding: 0 8px;
+    margin: 0 0px 50px 0px;
+}
+
+img{
+    width: 100%;
+    margin: 0 4px;
+}
+
+h3{
+    font-weight: lighter;
+    font-size: 24px; 
+    line-height: 38px;
+    margin-bottom: 1rem;
+}
+
+.blogpost > p {
+    line-height:22px;
+    font-size: 15px;
+}
+
+.pagination{
+    display:flex;
+    justify-content: center;
+}
+.pagination-buttons{    
+    display:inline-block;
+}
+
+.p{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    float: left;
+    margin-bottom: 40px ;
+}
+
+.p:hover{
+    background-color: black;
+    color: white;
+}
+
+.p1{
+    padding: 8px 16px;
+    text-decoration: none;
+    float: left;
+    margin-bottom: 40px ;
+    color:#fff; 
+    background-color: black;
+}
+
+.p1:hover {
+    background-color: rgba(216, 213, 213, 0.9);
+    color: black;
+}
+
+hr{
+    border: none;
+    border-top:1px solid rgba(224, 224, 224, 0.767);
+    margin:20px 0;
+}
+
+.aboutme {
+    font-weight: 500;
+    text-align: center;
+    margin: 60px 8px 0 0;
+}
+
+#mypic{
+    max-width: 100%;
+    margin:16px 0 36px 0;
+    padding: 0 24px 0 16px;
+}
+
+.aboutme> h4 {
+    font-size: 20px;
+}
+
+.aboutme > h6 {
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.aboutme > p {
+    font-size: 15px;
+    padding: 16px;
+    margin: 0 20px 90px 0;
+}
+
+.endofpage {
+    width: 98%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    margin: 3rem 0 ;
+}
+
+.footer{
+    width: 34%;
+    padding: 4px;
+}
+
+.footer> p{
+    margin: 0 1rem 0 0;
+    font-size:15px;
+}
+
+#w3-css{
+    margin-top:16px ;
+    font-size:15px;
+}
+
+.blogposts{
+    width: 33%;
+}
+
+.bp-span{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 8px 0px ;
+}
+
+.bps{
+    padding: 5px 16px 5px 0;
+}
+
+.bp1:hover,.bp2:hover,.nav-tabs:hover{
+    background-color: rgba(204, 202, 202, 0.548);
+}
+
+.bps > hr{
+    border: none;
+    border-top:1px solid rgb(212, 212, 212);
+    margin: 0;
+}
+.bp1, .bp2{
+    display: flex;
+    height: 100%;
+    padding: 15px 0 0 10px;
+}
+
+.bp1 > img, .bp2 > img{
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+}
+
+.bp-large{
+    font-size: 18px;
+}
+
+.bp-small{
+    font-size: 1rem;
+}
+
+.populartags{
+    width: 30%;
+} 
+.populartags> p{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags{
+    color:#fff;
+    border: white solid 1px;
+    background-color:rgb(97, 96, 96);
+    font-size: 11px;
+    font-family: 'Times New Roman', Times, serif;
+    padding:2px 8px 1px 8px;
+    margin: 0 2px 20px 0;
+    line-height: 15px;
+}
+
+.tags1{
+    background-color: black;
+    border: black solid 1px;
+    color:#fff;
+    line-height: 15px;
+    margin: -3px 2px 20px 0;
+    font-size: 14px;
+    text-align: center;
+    padding:4px 6px 0 6px;
+}
+
+@media screen and (min-width: 1200px) {
+    .fix-horizontal{
+        width: 100%;
+    }
+
+    .main-wrapper {
+        width: 1180px;
+        margin: auto;
+    }
+
+    .fix{
+        width: 1190px;
+        position: fixed;
+    }
+
+    .blogposts-row1, .blogposts-row2 {
+        width: 97%;
+        height: 60%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    #mypic{
+        width: 800px;;
+        height:60%;
+        
+    }
+} 
+
+@media  screen and (max-width: 600px) {
+    .content{
+        width: 100%;
+        height: auto;
+        margin: 7.7rem 0px 0 0px;
+    }
+
+    .blogposts-row1,.blogposts-row2{
+        width: 97.5%;
+        margin: 0 2rem 32px auto ; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-bottom: rem; */
+    }
+
+    .blogpost {
+        width: 96%;
+        margin: 0 0px 16px 0px;
+        padding: 0 16px;
+    }
+    
+    img{
+        width: 98%;
+    }
+
+    .pagination{
+        margin: 32px 0 16px 0;
+    }
+
+    hr{
+        margin: 0 20px;
+    }
+
+    .aboutme{
+        padding-bottom: 16px;
+    }
+
+    #mypic{
+        padding: 0 1rem 0 1.5rem;
+    }
+
+    .aboutme > p{
+        padding: 0 36px;
+    }
+
+    .endofpage{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .footer{
+        width: 97%;
+        margin-bottom: 20px;
+        padding-left: 32px;
+    }
+
+    .blogposts{
+        width: 90%;
+        margin-bottom: 4px;
+        padding-left: 32px;
+    }
+
+    .blogposts>h3{
+        margin-bottom: 6px;
+    }
+
+    .bp1,.bp2{
+        padding: 16px 0 8px 12px;
+    }
+
+    .populartags{
+        width: 90%;
+        margin-bottom: 0px;
+        padding-left: 32px;
+    }
+}
+
+

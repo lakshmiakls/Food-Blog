@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food_Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+</head>
+<body>
+    <div class="wrapper nav-animation">
+        <!-- nav bar & top -->
+        <div class="side-nav hide">
+            <a href="" class="nav-tabs" id="closetab" onclick="hide()">Close Menu</a>
+            <a href="#food" class="nav-tabs" onclick="hide()">Food</a>
+            <a href="#about" class="nav-tabs" onclick="hide()">About</a>
+        </div>
+
+        <div class="main-wrapper">
+            <div class="fix-horizontal fix">
+                <div class="nav" onclick="show()">&#9776;</div>
+                <div class="myfood">My Food</div>
+                <div class="mail">Mail</div>
+            </div>
+
+            <div class="content">
+                    <!-- blog post row 1 -->
+                <div class="blogposts-row1" id="food" >
+                    <div class="blogpost">
+                        <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="sandwich">
+                        <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+                        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                    <div class="blogpost">
+                        <img src="https://www.w3schools.com/w3images/steak.jpg" alt="steak">
+                        <h3>Let Me Tell You About This Steak</h3>
+                        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                    <div class="blogpost">
+                        <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="cherries">
+                        <h3>Cherries, interrupted</h3>
+                        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p><br>
+                        <p>What else?</p>
+                    </div>
+                    <div class="blogpost">
+                        <img src="https://www.w3schools.com/w3images/wine.jpg" alt="pasta with wine">
+                        <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                </div>
+                    <!-- blog post row 2 -->
+                <div class="blogposts-row2">
+                    <div class="blogpost">
+                        <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="popsicle">
+                        <h3>All I Need Is a Popsicle</h3>
+                        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                    <div class="blogpost">
+                        <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="salmon">
+                        <h3>Salmon For Your Skin</h3>
+                        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                    <div class="blogpost">
+                        <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="sandwich">
+                        <h3>The Perfect Sandwich, A Real Classic</h3>
+                        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                    <div class="blogpost">
+                        <img src="https://www.w3schools.com/w3images/croissant.jpg" alt="croissant">
+                        <h3>Le French</h3>
+                        <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>  
+                </div>
+                <!-- pagination -->
+                <div class="pagination">
+                    <div class="pagination-buttons">
+                        <a href="#" class="p">&laquo;</a>
+                        <a href="#" class="p1">1</a>
+                        <a href="#" class="p">2</a>
+                        <a href="#" class="p">3</a>
+                        <a href="#" class="p">4</a>
+                        <a href="#" class="p">&raquo;</a>
+                    </div>
+                </div>
+                <hr>
+                <!-- About me  -->
+                <div class="aboutme" id="about">
+                    <h3>About Me, The Food Man</h3>
+                    <img src="https://www.w3schools.com/w3images/chef.jpg" id="mypic" alt="my photo">
+                    <h4><b> I am Who I Am!</b></h4>
+                    <h6><i>With Passion For Real, Good Food</i></h6>
+                    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+                <hr>
+                <!-- Footer -->
+                <footer>
+                    <div class="endofpage">
+                        <div class="footer">
+                            <h3>FOOTER</h3>
+                            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                            <p id="w3-css">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" rel="noopener noreferrer">w3.css</a></p>
+                        </div> 
+                        <div class="blogposts">
+                            <h3>BLOG POSTS</h3>
+                                <ul class="bps">
+                                    <li class="bp1">
+                                        <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="xyz">
+                                        <div class="bp-span">
+                                            <span class="bp-large">Lorem</span>
+                                            <span class="bp-small">Sed mattis nunc</span> 
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li class="bp2">
+                                        <img src="https://www.w3schools.com/w3images/gondol.jpg" alt="pqr">
+                                        <div class="bp-span">
+                                            <span class="bp-large" >Ipsum</span>
+                                            <span class="bp-small">Praes tinci sed</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        <div class="populartags">
+                            <h3>POPULAR TAGS</h3>
+                            <p>
+                                <span class="tags1">Travel</span>
+                                <span class="tags">New York</span>
+                                <span class="tags">Dinner</span>
+                                <span class="tags">Salmon</span>
+                                <span class="tags">France</span>
+                                <span class="tags">Drinks</span>
+                                <span class="tags">Ideas</span>
+                                <span class="tags">Flavors</span>
+                                <span class="tags">Cuisine</span>
+                                <span class="tags">Chicken</span>
+                                <span class="tags">Dressing</span>
+                                <span class="tags">Fried</span>
+                                <span class="tags">Fish</span>
+                                <span class="tags">Duck</span>
+                            </p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
